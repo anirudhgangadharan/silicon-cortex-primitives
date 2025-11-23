@@ -19,7 +19,7 @@ class Neuron {
         
         void update_time_step() {
             // The equation: V_new = V_old * Decay + V_rest * (1-Decay)
-            potential = (potential * decay factor) + (resting_potential * (1.0 - decay_factor));
+            potential = (potential * decay_factor) + (resting_potential * (1.0 - decay_factor));
             cout << "...Time passes potential decays to:" << potential << "mV" << endl;
             
         }
@@ -49,7 +49,7 @@ int main() {
     n.input(10.0); //if leaked, this might not fire yet
     
     //Stimulus 3 (strong)
-    n.input(20.0)
+    n.input(20.0);
     
     return 0;
 }
